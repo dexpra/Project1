@@ -1,0 +1,201 @@
+:root {
+  --primary: #22223b;
+  --accent: #ffd166;
+  --bg: #f8f9fa;
+  --header-bg: rgba(34,34,59,0.85);
+  --card-bg: #fff;
+  --shadow: 0 4px 24px rgba(34,34,59,0.08);
+  --radius: 1.2rem;
+}
+
+body {
+  background: var(--bg);
+  color: var(--primary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+}
+
+
+h1, h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  color: var(--primary);
+  margin-top: 0;
+}
+
+.header {
+  background: var(--header-bg);
+  box-shadow: var(--shadow);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: #fff;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav a {
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header nav a:hover,
+.header nav a.active {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+.lang-switch button {
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  transition: background 0.2s, color 0.2s;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.lang-switch button:hover {
+  background: var(--primary);
+  color: var(--accent);
+}
+
+.overlay-text {
+  background: rgba(34,34,59,0.55);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+  max-width: 90vw;
+  position: relative;
+  text-align: center;
+}
+
+.overlay-text h2 {
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+
+.overlay-text p {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0;
+}
+
+main {
+  background: transparent;
+  box-shadow: none;
+  margin-top: -2rem;
+  padding: 4rem 2rem 2rem 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+section {
+  margin: 2.5rem 0;
+  padding: 2rem;
+  background: rgba(246,246,249,0.85);
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(34,34,59,0.04);
+  display: none; 
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1 rem;
+  font-size: 0.9rem;
+  background: #eee;
+  bottom: 0; 
+  width: 100%;
+}
+
+.carousel {
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+}
+.carousel-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background: var(--card-bg);
+  color: var(--primary);
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin: 0 0.5rem;
+}
+.carousel-btn:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+.carousel-dots {
+  display: flex;
+  gap: 0.7rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.carousel-dot {
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  background: #ddd;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.carousel-dot.active {
+  background: var(--accent);
+}
+
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .overlay-text {
+    padding: 1.2rem 1rem;
+    font-size: 1rem;
+  }
+  .overlay-text h2 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 2rem 0.5rem;
+  }
+  section {
+    padding: 1rem;
+  }
+}
+

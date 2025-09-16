@@ -67,7 +67,8 @@ let carouselIndex = 0;
 const carouselImages = [
   "img/bern1.jpg",
   "img/bern2.jpg",
-  "img/bern3.jpg"
+  "img/bern3.jpg",
+  "img/bern4.jpg",
 ];
 const body = document.body;
 

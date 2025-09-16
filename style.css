@@ -8,6 +8,13 @@
   --radius: 1.2rem;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 body {
   background: var(--bg);
   color: var(--primary);
@@ -22,6 +29,20 @@ h1, h2 {
   font-family: 'Merriweather', Georgia, serif;
   color: var(--primary);
   margin-top: 0;
+}
+
+.logo-title {
+  display : flex; 
+  align-items : center;
+  gap: 5px;
+}
+
+.logo-title img {
+  height: 50px;
+}
+
+.logo-title h1 {
+  margin : 0;
 }
 
 .header {
@@ -87,12 +108,13 @@ h1, h2 {
   padding: 2.5rem 2rem;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  left: 50%;
-  bottom: 15%;
-  transform: translateX(-50%);
   max-width: 90vw;
-  position: relative;
+  margin: 2rem auto 0 auto;
   text-align: center;
+  position: relative;
+  left: auto;
+  bottom: auto;
+  transform: none;
 }
 
 .overlay-text h2 {
@@ -116,6 +138,7 @@ main {
   padding: 4rem 2rem 2rem 2rem;
   position: relative;
   z-index: 2;
+  flex: 1;
 }
 
 section {
@@ -133,7 +156,6 @@ footer {
   padding: 1 rem;
   font-size: 0.9rem;
   background: #eee;
-  bottom: 0; 
   width: 100%;
 }
 

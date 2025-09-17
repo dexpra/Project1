@@ -80,7 +80,7 @@ h1, h2 {
 }
 
 .header nav ul li:nth-child(1) a { 
-  color: #111; 
+  color: #d4af37; 
 }
 
 .header nav ul li:nth-child(2) a { 
@@ -92,7 +92,7 @@ h1, h2 {
 }
 
 .header nav ul li:nth-child(4) a { 
-  color: #222; 
+  color: #b80000; 
 }
 
 .header nav a:hover,

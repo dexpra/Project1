@@ -3,7 +3,7 @@ const translations = {
     anfang: "Anfang",
     text_anfang: "Der Kanton Bern wurde 1353 Teil der Alten Eidgenossenschaft. Er entwickelte sich rasch zu einem bedeutenden Mitglied des Bundes und spielte eine zentrale Rolle in der politischen Geschichte der Schweiz. Heute ist Bern ein Bindeglied zwischen der deutsch- und französischsprachigen Schweiz und zeichnet sich durch seine kulturelle Vielfalt aus.",
     geographie: "Geographie",
-    text_geographie: "Bern ist mit rund 6.000 km² der zweitgrößte Kanton der Schweiz. Die Landschaft reicht vom Jura im Westen über das Mittelland bis zu den Hochalpen im Süden. Bekannte Gebiete sind das Berner Oberland mit Eiger, Mönch und Jungfrau sowie die Seen Thunersee und Brienzersee. Durch seine vielfältige Natur ist Bern ein beliebtes Ziel für Tourismus, Wandern und Wintersport.",
+    text_geographie: "Bern ist mit rund 6.000 km² der zweitgrösste Kanton der Schweiz. Die Landschaft reicht vom Jura im Westen über das Mittelland bis zu den Hochalpen im Süden. Bekannte Gebiete sind das Berner Oberland mit Eiger, Mönch und Jungfrau sowie die Seen Thunersee und Brienzersee. Durch seine vielfältige Natur ist Bern ein beliebtes Ziel für Tourismus, Wandern und Wintersport.",
     bevoelkerung: "Bevölkerung",
     text_bevoelkerung: "Im Kanton Bern leben über 1 Million Menschen. Die Mehrheit spricht Deutsch, während in den Bezirken Jura bernois und Biel/Bienne auch Französisch Amtssprache ist. Damit ist Bern offiziell zweisprachig. Die Bevölkerung ist kulturell vielfältig, mit einem starken Bezug zu Traditionen, aber auch einer weltoffenen Ausrichtung.",
     politik: "Verfassung und Politik",
@@ -50,7 +50,7 @@ function switchLanguage(lang) {
   document.querySelector("footer p").textContent = translations[lang].footer;
 }
 
-// язык по умолчанию
+// language on start
 switchLanguage("de");
 
 function showSection(id) {
@@ -125,6 +125,6 @@ function nextSlide() {
 // авто-прокрутка
 setInterval(() => {
   nextSlide();
-}, 4000);
+}, 6000);
 
 updateDots();

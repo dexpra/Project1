@@ -1,6 +1,7 @@
 :root {
-  --primary: #22223b;
-  --accent: #ffd166;
+  --primary: #830404;
+  --accent: #000000;
+  --secondary: #ffd000;
   --bg: #f8f9fa;
   --header-bg: rgba(34,34,59,0.85);
   --card-bg: #fff;
@@ -23,9 +24,14 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1 {
   font-family: 'Merriweather', Georgia, serif;
   color: var(--primary);
+  margin-top: 0;
+}
+h2 {
+  font-family: 'Merriweather', Georgia, serif;
+  color: var(--accent);
   margin-top: 0;
 }
 
@@ -101,14 +107,14 @@ h1, h2 {
   color: var(--primary);
 }
 
-/* ========== Новые кнопки ========== */
+/* ========== NEW INTEGRATED BUTTONS ========== */
 .btn {
   position: relative;
   width: 120px;
   height: 40px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #91C9FF;
+  border: 1px solid #5c0202;
   outline: none;
   transition: 0.8s ease-in-out;
   margin: 0 0.3rem;
@@ -127,7 +133,7 @@ h1, h2 {
   top: 0;
   left: 0;
   fill: none;
-  stroke: #fff;
+  stroke: #d4af37;
   stroke-dasharray: 150 480;
   stroke-dashoffset: 150;
   transition: 0.8s ease-in-out;
@@ -136,7 +142,7 @@ h1, h2 {
 }
 
 .btn:hover {
-  background: #4F95DA;
+  background: #000000;
   transition: 0.8s ease-in-out;
 }
 
@@ -144,13 +150,12 @@ h1, h2 {
   stroke-dashoffset: -480;
 }
 
-/* Кнопки переключения языков в ряд */
 .lang-switch {
   display: flex;
   gap: 0.5rem;
 }
 
-/* ================================== */
+
 
 .overlay-text {
   background: rgba(34,34,59,0.55);
@@ -170,7 +175,7 @@ h1, h2 {
   font-size: 2.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: var(--accent);
+  color: var(--secondary);
   letter-spacing: 0.03em;
 }
 
@@ -218,6 +223,7 @@ footer {
   background-repeat: no-repeat;
 }
 .carousel-btn {
+  display: none;
   width: 2.5rem;
   height: 2.5rem;
   border: none;
@@ -235,7 +241,7 @@ footer {
   color: var(--primary);
 }
 .carousel-dots {
-  display: flex;
+  display: none;
   gap: 0.7rem;
   justify-content: center;
   margin-top: 1rem;
@@ -253,7 +259,7 @@ footer {
   background: var(--accent);
 }
 
-/* ================== Адаптив ================== */
+/* ================== adaptive ================== */
 @media (max-width: 900px) {
   .header {
     flex-direction: column;

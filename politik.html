@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanton Bern</title>
-
+    <title>Kanton Bern – Verfassung und Politik</title>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,38 +18,18 @@
                 <li><a href="anfang.html">Anfang</a></li>
                 <li><a href="geographie.html">Geographie</a></li>
                 <li><a href="bevoelkerung.html">Bevölkerung</a></li>
-                <li><a href="politik.html">Verfassung und Politik</a></li>
+                <li><a href="politik.html" class="active">Verfassung und Politik</a></li>
             </ul>
         </nav>
         <div class="lang-switch">
-            <button class="btn" onclick="switchLanguage('de')">
-                <svg viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1"/>
-                    <polyline points="179,1 179,59 1,59 1,1 179,1"/>
-                </svg>
-                <span>DE</span>
-            </button>
-            <button class="btn" onclick="switchLanguage('en')">
-                <svg viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1"/>
-                    <polyline points="179,1 179,59 1,59 1,1 179,1"/>
-                </svg>
-                <span>EN</span>
-            </button>
-            <button class="btn" onclick="switchLanguage('fr')">
-                <svg viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1"/>
-                    <polyline points="179,1 179,59 1,59 1,1 179,1"/>
-                </svg>
-                <span>FR</span>
-            </button>
+            <button class="btn" onclick="switchLanguage('de')"><svg viewBox="0 0 180 60" class="border"><polyline points="179,1 179,59 1,59 1,1 179,1"/><polyline points="179,1 179,59 1,59 1,1 179,1"/></svg><span>DE</span></button>
+            <button class="btn" onclick="switchLanguage('en')"><svg viewBox="0 0 180 60" class="border"><polyline points="179,1 179,59 1,59 1,1 179,1"/><polyline points="179,1 179,59 1,59 1,1 179,1"/></svg><span>EN</span></button>
+            <button class="btn" onclick="switchLanguage('fr')"><svg viewBox="0 0 180 60" class="border"><polyline points="179,1 179,59 1,59 1,1 179,1"/><polyline points="179,1 179,59 1,59 1,1 179,1"/></svg><span>FR</span></button>
         </div>
     </header>
-
     <div class="overlay-text">
         <h2>Willkommen im Kanton Bern</h2>
     </div>
-
     <main>
         <section id="anfang">
             <h2>Anfang</h2>
@@ -69,11 +48,9 @@
             <p></p>
         </section>
     </main>
-    
     <footer>
         <p>© 2025 Project über Kanton Bern bei Mykhailo Bondar</p>
     </footer>
-
     <script src="script.js"></script>
 </body>
 </html>

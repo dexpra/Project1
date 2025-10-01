@@ -59,8 +59,23 @@ function showSection(id) {
   });
   document.getElementById(id).style.display = "block";
 }
+
+function showOnlyCurrentSection() {
+  // Get current page name
+  const page = window.location.pathname.split('/').pop().replace('.html', '');
+  // Default to 'anfang' if index.html
+  let sectionId = page;
+  if (sectionId === 'index' || sectionId === '') sectionId = 'anfang';
+  document.querySelectorAll("main section").forEach(sec => {
+    sec.style.display = "none";
+  });
+  if (document.getElementById(sectionId)) {
+    document.getElementById(sectionId).style.display = "block";
+  }
+}
+
 window.addEventListener("DOMContentLoaded", () => {
-  showSection("anfang");
+  showOnlyCurrentSection();
 });
 
 let carouselIndex = 0;

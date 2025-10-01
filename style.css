@@ -85,26 +85,28 @@ h2 {
   text-decoration: none;
 }
 
-.header nav ul li:nth-child(1) a { 
+.header nav ul li:nth-child(1) a:not(.active) { 
   color: #d4af37; 
 }
 
-.header nav ul li:nth-child(2) a { 
+.header nav ul li:nth-child(2) a:not(.active) { 
   color: #b80000; 
 }
 
-.header nav ul li:nth-child(3) a { 
+.header nav ul li:nth-child(3) a:not(.active) { 
   color: #d4af37; 
 }
 
-.header nav ul li:nth-child(4) a { 
+.header nav ul li:nth-child(4) a:not(.active) { 
   color: #b80000; 
 }
 
 .header nav a:hover,
 .header nav a.active {
   background: var(--accent);
-  color: var(--primary);
+  color: var(--secondary) !important; 
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.12);
 }
 
 /* ========== NEW INTEGRATED BUTTONS ========== */
@@ -257,6 +259,14 @@ footer {
 }
 .carousel-dot.active {
   background: var(--accent);
+}
+
+/* Show only the section with the matching id */
+#anfang,
+#geographie,
+#bevoelkerung,
+#politik {
+  display: block;
 }
 
 /* ================== adaptive ================== */
